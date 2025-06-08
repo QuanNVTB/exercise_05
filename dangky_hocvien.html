@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffcc;
+    }
+    .form-container {
+      background-color: #ffff99;
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .form-title {
+      background-color: #ccffcc;
+      color: blue;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+    }
+    .form-group {
+      margin: 10px 0;
+    }
+    .form-group label {
+      display: inline-block;
+      width: 80px;
+      vertical-align: top;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+      width: 250px;
+      padding: 4px;
+    }
+    .form-group textarea {
+      height: 60px;
+      resize: none;
+    }
+    .form-group .gender-options {
+      display: inline-block;
+      width: 250px;
+    }
+    .form-buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .form-buttons input {
+      padding: 5px 10px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="form-container">
+  <label style="color: blue; font-size: small">ĐĂNG KÝ HỌC VIÊN</label>
+  <form action="" method="post">
+    <div class="form-group">
+      <label>Họ và tên</label>
+      <input type="text" name="name"><br>
+    </div>
+    <div class="form-group">
+      <label>Ngày sinh</label>
+      <input type="date" name="date" value="datebirth"><br>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email"><br>
+    </div>
+
+    <div class="form-group">
+      <label>Giới tính</label>
+      <div class="gender-options">
+        <input type="radio" name="gender" value="male">Nam
+        <input type="radio" name="gender" value="female" checked>Nữ<br>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Địa chỉ</label>
+      <textarea name="address" ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Lớp</label>
+      <select name="class">
+        <option>-- Chọn lớp --</option>
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+      </select></br>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" name="email" ><br>
+    </div>
+  <div class="form-group">
+    <label>Điện thoại</label>
+    <input type="tel" name="phone"><br>
+  </div>
+
+  <div class="form-buttons">
+    <input type="submit" name="" value="Đăng ký">
+    <input type="reset" value="Nhập lại">
+  </div>
+  </form>
+</div>
+</body>
+</html>
